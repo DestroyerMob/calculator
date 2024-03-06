@@ -1,5 +1,24 @@
 .grid-container {
 	display: grid;
-	grid-template-rows: 100px 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px 100px 100px;
 	grid-template-columns: 100px 100px 100px 100px;
+}
+
+.grid-container button {
+	font-weight: bold;
+}
+
+.grid-item {
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+.center {
+	text-align: center;
+	justify-content: center;
+}
+
+.equation-box {
+	width: 400px;
+	height: 50px;
 }
