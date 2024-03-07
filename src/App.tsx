@@ -16,10 +16,12 @@ export default function App() {
 
 	return (
 		<>
-			<div className="center">
-				<input value={totalValue} className="equation-box center"></input>
-			</div>
+			<div className="center"></div>
 			<div className="grid-container center">
+				<input
+					value={totalValue}
+					className="equation-box center"
+				></input>
 				<Button
 					value="7"
 					onClick={() => {

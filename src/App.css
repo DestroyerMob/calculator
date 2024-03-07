@@ -1,11 +1,24 @@
+section {
+	--primary-color: white;
+	--secondary-color: black;
+}
+
 .grid-container {
 	display: grid;
-	grid-template-rows: 100px 100px 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px 100px 100px 100px;
 	grid-template-columns: 100px 100px 100px 100px;
 }
 
 .grid-container button {
 	font-weight: bold;
+	background-color: white;
+	color: black;
+	transition-duration: 0.25s;
+}
+
+.grid-container button:hover {
+	background-color: black;
+	color: white;
 }
 
 .grid-item {
@@ -19,6 +32,6 @@
 }
 
 .equation-box {
-	width: 400px;
-	height: 50px;
+	grid-column-start: 1;
+	grid-column-end: 5;
 }
