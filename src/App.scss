@@ -1,7 +1,5 @@
-section {
-	--primary-color: white;
-	--secondary-color: black;
-}
+$base-color: white;
+$secondary-color: black;
 
 .grid-container {
 	display: grid;
@@ -11,14 +9,15 @@ section {
 
 .grid-container button {
 	font-weight: bold;
-	background-color: white;
-	color: black;
+	background-color: $base-color;
+	border: 1px solid $secondary-color;
+	color: $secondary-color;
 	transition-duration: 0.25s;
 }
 
 .grid-container button:hover {
-	background-color: black;
-	color: white;
+	background-color: $secondary-color;
+	color: $base-color;
 }
 
 .grid-item {
@@ -30,8 +29,11 @@ section {
 	text-align: center;
 	justify-content: center;
 }
-
 .equation-box {
 	grid-column-start: 1;
 	grid-column-end: 5;
+	background: $base-color;
+	color: $secondary-color;
+	border: 1px solid $secondary-color;
+	font-size: large;
 }

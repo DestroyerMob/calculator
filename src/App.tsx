@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './App.scss';
 import Button from './components/Button';
 
 export default function App() {
@@ -18,10 +18,7 @@ export default function App() {
 		<>
 			<div className="center"></div>
 			<div className="grid-container center">
-				<input
-					value={totalValue}
-					className="equation-box center"
-				></input>
+				<input value={totalValue} className="equation-box center"></input>
 				<Button
 					value="7"
 					onClick={() => {
